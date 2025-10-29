@@ -1,0 +1,13 @@
+/*
+ Theme Name: Plataforma Cursos
+ Theme URI: www.linkedin.com/in/bernardo-radin-48b784235
+ Author: Bernardo Radin
+ Author URI: www.linkedin.com/in/bernardo-radin-48b784235
+ Description: Tema teste desenvolvido do zero para plataforma de cursos.
+ Version: 1.0
+*/
+
+@import url('./assets/painel.css');
+@import url('./assets/conheca-o-curso.css');
+@import url('./assets/curso.css');
+@import url('./assets/toast.css');

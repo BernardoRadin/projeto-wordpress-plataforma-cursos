@@ -1,0 +1,132 @@
+.container-aula {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.video-section {
+  flex: 1;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.video-wrapper video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-bottom: 1px solid #eee;
+  border-radius: 12px 12px 0 0;
+  object-fit: cover; 
+}
+
+.aula-info {
+  padding: 20px;
+}
+
+.titulo-aula {
+  color: #2E2E2E;
+  margin: 0 0 10px;
+}
+
+.descricao-aula {
+  color: #707070;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.sidebar-modulos {
+  width: 360px; 
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  overflow-y: auto;
+  max-height: 85vh;
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.modulo {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+
+.modulo:last-child {
+  border-bottom: none;
+}
+
+.modulo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 6px 0;
+  transition: all 0.3s ease;
+}
+
+.modulo-header:hover {
+  opacity: 0.8;
+}
+
+.modulo-titulo {
+  font-size: 1rem;
+  color: var( --cor-primaria);
+  margin: 0;
+}
+
+.icone-toggle {
+  width: 18px;
+  height: 18px;
+  color: #707070;
+  transition: transform 0.3s ease;
+}
+
+.lista-aulas {
+  list-style: none;
+  padding: 0 0 0 10px;
+  margin: 8px 0 0;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.modulo.ativo .lista-aulas {
+  max-height: 500px; 
+  opacity: 1;
+}
+
+.modulo.ativo .icone-toggle {
+  transform: rotate(180deg);
+}
+
+.aula-item {
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #2E2E2E;
+  transition: all 0.3s ease;
+}
+
+.aula-item:hover {
+  background: var(--cor-primaria);
+  opacity: 0.8;
+}
+
+.aula-item.ativa {
+  background: var( --cor-primaria);
+  color: #fff;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+    .container-aula{
+        flex-direction: column;
+    }
+
+    .sidebar-modulos{
+        width:auto
+    }
+}
