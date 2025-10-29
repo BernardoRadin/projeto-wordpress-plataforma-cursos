@@ -27,8 +27,8 @@ O projeto foi criado com o objetivo de aprofundar os conhecimentos em desenvolvi
 
 <img width="1363" height="417" alt="image" src="https://github.com/user-attachments/assets/c41a636b-99cf-4004-b6ee-63545c5efcee" />
 
-## 💡 Funcionalidades
+## Funcionalidades
 - Tema: layout moderno, custom fields e suporte a menus.
 - Plugin: controle de acesso dos usuários aos cursos e integração com checkout.
 
-© 2025 — Projeto de estudo e prática em desenvolvimento WordPress.
+© 2025 — Projeto de estudo e prática em desenvolvimento WordPress 6.8.3.
