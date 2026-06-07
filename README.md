@@ -1,34 +1,39 @@
-# Projeto WordPress Plataforma Cursos - Tema + Plugin
+# WordPress Course Platform Project - Theme + Plugin
 
-Este repositório contém um **tema** e um **plugin personalizados** desenvolvidos para uma plataforma de cursos em WordPress.  
-O projeto foi criado com o objetivo de aprofundar os conhecimentos em desenvolvimento WordPress, integrando layout customizado, controle de acesso e integração com pagamentos via Stripe.
+This repository contains a **custom theme** and a **custom plugin** developed for a WordPress course platform.
+The project was created with the goal of deepening knowledge in WordPress development, integrating a custom layout, access control, and payment integration via Stripe.
 
-## Estrutura
-- `/wp-content/themes/plataforma-cursos-theme` — tema personalizado
-- `/wp-content/plugins/comprarcurso` — plugin auxiliar responsável pelo checkout e controle de acesso
+## Structure
 
-## Instalação
-1. Copie a pasta do tema `plataforma-cursos-theme` para a pasta `wp-content/themes/` do seu WordPress.
-2. Copie a pasta do plugin `comprarcurso` para a pasta `wp-content/plugins/` do seu WordPress.
-3. O plugin utiliza API da Stripe para processar pagamentos.
+* `/wp-content/themes/plataforma-cursos-theme` — custom theme
+* `/wp-content/plugins/comprarcurso` — auxiliary plugin responsible for checkout and access control
 
-### Instalação
-1. Acesse a pasta do plugin `/wp-content/plugins/comprarcurso` e instale as dependências com o Composer:
-    composer install
-2. Adicione suas chaves da Stripe no arquivo `wp-config.php` 
-    define( 'STRIPE_SECRET_KEY', 'sua_chave_secreta_aqui' );
-    define( 'STRIPE_PUBLIC_KEY', 'sua_chave_publica_aqui' );
+## Installation
 
-4. Ative o tema em **Aparência -> Temas**.
-   
+1. Copy the `plataforma-cursos-theme` theme folder to the `wp-content/themes/` directory of your WordPress installation.
+2. Copy the `comprarcurso` plugin folder to the `wp-content/plugins/` directory of your WordPress installation.
+3. The plugin uses the Stripe API to process payments.
+
+### Installation
+
+1. Go to the plugin folder `/wp-content/plugins/comprarcurso` and install the dependencies using Composer:
+   composer install
+
+2. Add your Stripe keys to the `wp-config.php` file:
+   define( 'STRIPE_SECRET_KEY', 'your_secret_key_here' );
+   define( 'STRIPE_PUBLIC_KEY', 'your_public_key_here' );
+
+3. Activate the theme in **Appearance -> Themes**.
+
 <img width="742" height="499" alt="image" src="https://github.com/user-attachments/assets/0a3bc00e-57b2-402e-996f-df45d388c3d0" />
 
-6. Ative o plugin em **Plugins -> Instalados**.
+6. Activate the plugin in **Plugins -> Installed Plugins**.
 
 <img width="1363" height="417" alt="image" src="https://github.com/user-attachments/assets/c41a636b-99cf-4004-b6ee-63545c5efcee" />
 
-## Funcionalidades
-- Tema: layout moderno, custom fields e suporte a menus.
-- Plugin: controle de acesso dos usuários aos cursos e integração com checkout.
+## Features
 
-© 2025 — Projeto de estudo e prática em desenvolvimento WordPress 6.8.3.
+* Theme: modern layout, custom fields, and menu support.
+* Plugin: user access control for courses and checkout integration.
+
+© 2025 — Study and practice project in WordPress 6.8.3 development.
